@@ -1,5 +1,5 @@
-import { stack } from '@/data/portfolio';
-import { SectionTitle } from './SectionTitle';
+import { stack } from "@/data/portfolio";
+import { SectionTitle } from "./SectionTitle";
 
 export function Stack() {
   const maxLabel = Math.max(...stack.map((s) => s.label.length));
@@ -31,11 +31,11 @@ export function Stack() {
                 >
                   <td className="py-2 pr-4 sm:pr-8 align-top">
                     <span className="text-red tracking-wider whitespace-nowrap">
-                      {entry.label.padEnd(maxLabel, ' ')}
+                      {entry.label.padEnd(maxLabel, " ")}
                     </span>
                   </td>
                   <td className="py-2 text-fg-dim whitespace-nowrap">
-                    <span className="text-fg-muted hidden sm:inline">:: </span>
+                    <span className="text-fg-muted hidden sm:inline">::</span>
                     {entry.value}
                   </td>
                 </tr>
@@ -52,7 +52,8 @@ export function Stack() {
         </div>
 
         <p className="text-sm text-fg-dim mt-3">
-          <span className="text-green">$</span> <span className="text-fg-muted">_</span>
+          <span className="text-green">$</span>{" "}
+          <span className="text-fg-muted">_</span>
         </p>
       </div>
     </section>
