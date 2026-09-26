@@ -1,5 +1,5 @@
-import { engineeringConcepts, engineeringLogs } from '@/data/portfolio';
-import { SectionTitle } from './SectionTitle';
+import { engineeringConcepts, engineeringLogs } from "@/data/portfolio";
+import { SectionTitle } from "./SectionTitle";
 
 export function Engineering() {
   return (
@@ -28,17 +28,18 @@ export function Engineering() {
         </p>
         <div className="space-y-3">
           {engineeringLogs.map((log, i) => (
-            <div key={i} className="text-sm animate-fade-in" style={{ animationDelay: `${i * 80}ms` }}>
+            <div
+              key={i}
+              className="text-sm animate-fade-in"
+              style={{ animationDelay: `${i * 80}ms` }}
+            >
               <div className="text-fg-dim">
-                <span className="text-green">$</span> {log.command.replace('$ ', '')}
+                <span className="text-green">$</span>{" "}
+                {log.command.replace("$ ", "")}
               </div>
               <div className="flex items-center gap-2 mt-1 ml-4">
-                <span
-                  className={`text-xs font-bold tracking-wider ${
-                    log.status === 'ok' ? 'text-green' : 'text-red'
-                  }`}
-                >
-                  [OK]
+                <span className={`text-xs font-bold tracking-wider text-green`}>
+                  [ OK ]
                 </span>
                 <span className="text-fg-dim">{log.result}</span>
               </div>
