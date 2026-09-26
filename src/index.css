@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-fg-muted/40;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg font-mono text-fg antialiased;
+    font-feature-settings: 'liga' 0;
+  }
+
+  ::selection {
+    @apply bg-green/30 text-fg;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-fg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-fg-dim;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-1 ring-green outline-offset-2;
+  }
+}
+
+@layer utilities {
+  .ascii-border {
+    border: 1px solid theme('colors.fg-muted');
+  }
+
+  .text-shadow-green {
+    text-shadow: 0 0 6px rgba(111, 175, 114, 0.3);
+  }
+}
