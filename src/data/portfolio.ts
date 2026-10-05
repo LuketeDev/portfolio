@@ -68,7 +68,10 @@ export const projects: Project[] = [
       "GitHub Actions",
     ],
     links: [
-      { label: "GITHUB", url: "PLACEHOLDER_GITHUB_TASK_API" },
+      {
+        label: "GITHUB",
+        url: "https://github.com/LuketeDev/task-management-api",
+      },
       {
         label: "LIVE API",
         url: "https://task-management-api-f7xf.onrender.com",
@@ -76,6 +79,47 @@ export const projects: Project[] = [
       {
         label: "SWAGGER",
         url: "https://task-management-api-f7xf.onrender.com/swagger-ui.html",
+      },
+    ],
+  },
+  {
+    id: "authentication-api",
+    name: "AUTHENTICATION API",
+    description:
+      "A REST API for user authentication, built with Java and Spring Boot.",
+    type: "STUDY",
+    isDeployed: true,
+    tech: [
+      "Java 21",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "PostgreSQL 17",
+      "Flyway",
+      "JWT",
+      "BCrypt",
+      "Docker",
+      "JUnit 5",
+      "Mockito",
+      "Testcontainers",
+      "OpenAPI / Swagger",
+      "JaCoCo",
+      "SpotBugs",
+      "OWASP Dependency-Check",
+      "GitHub Actions",
+    ],
+    links: [
+      {
+        label: "GITHUB",
+        url: "https://github.com/LuketeDev/authentication-api",
+      },
+      {
+        label: "LIVE API",
+        url: "https://authentication-api-09s5.onrender.com",
+      },
+      {
+        label: "SWAGGER",
+        url: "https://authentication-api-09s5.onrender.com/swagger-ui.html",
       },
     ],
   },
